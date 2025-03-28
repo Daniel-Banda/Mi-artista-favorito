@@ -1,0 +1,186 @@
+html{
+    --bg-color: #1A1A1A;
+    --text-color: #f7ecda;
+    --container-color1: #535557;
+    --container-color2: #F1A118;
+    --container-color3: #cfcccc;
+    --container-color4: #7c7a7a;
+
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: "Lato", sans-serif;
+    text-align: justify;
+}
+
+/* MENÚ */
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+div.sticky-menu{
+    position: relative;
+    height: 750px;
+}
+
+div.container-menu{
+    position: relative;
+    background-color: var(--bg-color);
+    margin: 10px 0px 25px 0px;
+    z-index: 1;
+}
+
+div.menu{
+    position: sticky;
+    z-index: 2;
+    top: 0px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    color: var(--text-color);
+    background-color: var(--container-color2);
+    
+}
+
+/* INDEX */
+
+div.titulo{
+    position: relative; 
+}
+
+div.titulo h1#artista{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 60PX;
+    background-image:  url("../assets/maxresdefault.jpg") ;
+    background-size: cover;
+    position: relative;
+    bottom: 40px;
+}
+
+div.titulo-imagen{
+    display: flex;
+    justify-content: center;
+    z-index: 20;  
+}
+
+div.titulo-imagen img#foto-artista{
+    display: flex;
+    position: absolute;
+    top: 300px;
+    width: 350px;
+    padding-top: 100px;
+    clip-path: ellipse(50% 30%);
+}
+
+div.container-p{
+    display: flex;
+    margin: 3rem 5rem;
+    font-size: 25px;
+    text-align: center;
+}
+
+   
+/* DISCOGRAFÍA */
+div.container-album{
+    margin:2rem 5rem;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 30px;
+}
+
+div.container-album div img#album-item-img{
+    width: 280px;
+
+}
+
+div.container-album h5#album-item-titulo{
+    font-size: 30px;
+    position: relative;
+    bottom: 10%;
+}
+
+div.container-album h6#album-item-fecha{
+    font-size: 25px;
+    position: relative;
+    bottom: 20%;
+}
+    
+div.container-album ol#album-item-list{
+    font-size: 20px;
+    position: relative;
+    bottom: 12px;
+    right: 25px;
+}
+
+div.container-album p#album-item-parrafo{
+    text-align: center;
+    font-size: larger;
+    display: flex;
+    margin: 100px 10px 20px 10px;
+}
+
+/* FORMULARIO */
+div.container-form{
+    display: flex;
+    margin: 5% 20%;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--container-color1);
+    border-radius: 2rem;
+    padding: 2rem;
+    font-size: 150%;
+ 
+}
+
+div.container-form div.item-form{
+    display: flex;
+    text-align: initial;
+}
+
+
+div.container-form div.item-form input.ip-text{
+    background-color: var(--container-color3);
+    display: block;
+    border: 3px solid var(--text-color);
+    width: 100%;
+    height: 25px;
+    margin: 2% 0%;
+    text-align: left;
+}
+
+div input.ip-text{
+    color: var(--container-color4);
+    font-size: 13px;
+}
+
+div input.ip-text::placeholder{
+    color: var(--container-color1); 
+    text-align: left;
+} 
+
+div.container-form div.item-form input.ip-text#opinion{
+    padding-bottom: 150px;
+    display: inline-flex;
+
+    
+}
+
+div.container-form div.item-form .radio{
+    font-size: 18px;
+    display: inline-flex;  
+}
+
+@media (max-width: 527px){
+    div.container-form{
+        margin: 5% ;
+    }
+}
+
